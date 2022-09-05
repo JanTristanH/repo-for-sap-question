@@ -200,7 +200,7 @@
                         },
                         {
                             "title": "Amount",
-                            "value": "{co2popover>amount}"
+                            "value": "{co2popover>amount} {co2popover>amountUom}"
                         },
                         {
                             "title": "CO2e Factor",
@@ -209,7 +209,7 @@
                         },
                         {
                             "title": "CO2e Amount",
-                            "value": "{co2popover>co2eAmount}"
+                            "value": "{co2popover>co2eAmount} {co2popover>co2eAmountUom}"
                         }
                     ]
                 }
