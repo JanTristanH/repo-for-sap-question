@@ -94,6 +94,63 @@
             }
         }
     },
+
+    "objectVehicle": {
+        "sap.app": {
+            "type": "card"
+        },
+        "sap.card": {
+            "type": "Object",
+            "data": {
+                "json": {
+                    "type": "Combustion",
+                    "emissionClass": "EURO 6c",
+                    "avgConsumption": "35,7 L/100km",
+                    "opfInstalled": "yes"
+                }
+            },
+            "header": {
+                "title": "Vehicle Details",
+                "subTitle": "Vehicle ID"
+            },
+            "content": {
+                "groups": [{
+                        "title": "Transport Unit",
+                        "items": [{
+                                "label": "Type",
+                                "value": "{type}"
+                            },
+                            {
+                                "label": "Emission Class",
+                                "value": "{emissionClass}"
+                            },
+                            {
+                                "label": "Avg. Consumption",
+                                "value": "{avgConsumption}"
+                            },
+                            {
+                                "label": "OPF installed",
+                                "value": "{opfInstalled}"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Loaded Goods",
+                        "items": [{
+                                "label": "Diesel",
+                                "value": "1500 L"
+                            },
+                            {
+                                "label": "Petrol",
+                                "value": "2500 L"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+
     "tableCalculatedEmissions": {
         "sap.app": {
             "id": "sample.CardsLayout.model.table",
@@ -181,4 +238,5 @@
             }
         }
     }
+
 }

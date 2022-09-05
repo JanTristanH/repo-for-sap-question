@@ -3,7 +3,7 @@
    xmlns:f="sap.f"
    xmlns:w="sap.ui.integration.widgets"
    xmlns:cssgrid="sap.ui.layout.cssgrid">
-   <Dialog id="C02PopoverDialog" contentWidth="50%" title="{i18n>DialogTitle} $123445409">
+   <Dialog id="C02PopoverDialog" contentWidth="60%" title="{i18n>DialogTitle} $123445409">
 
       <Title text="Super cool Dialog" titleStyle="H2" class="sapUiSmallMarginBottom sapUiSmallMarginTop sapUiSmallMarginBegin" />
       <f:GridContainer>
@@ -12,12 +12,17 @@
          </f:layout>
          <w:Card manifest="{manifests>/donut}">
             <w:layoutData>
-               <f:GridContainerItemLayoutData rows="4" columns="4" />
+               <f:GridContainerItemLayoutData rows="3" columns="2" />
+            </w:layoutData>
+         </w:Card>
+         <w:Card manifest="{manifests>/objectVehicle}" baseUrl="./">
+            <w:layoutData>
+               <f:GridContainerItemLayoutData columns="2" rows="3"/>
             </w:layoutData>
          </w:Card>
          <w:Card manifest="{manifests>/tableCalculatedEmissions}" baseUrl="./" action="onAction">
             <w:layoutData>
-               <f:GridContainerItemLayoutData columns="4" />
+               <f:GridContainerItemLayoutData columns="5" />
             </w:layoutData>
          </w:Card>
       </f:GridContainer>
