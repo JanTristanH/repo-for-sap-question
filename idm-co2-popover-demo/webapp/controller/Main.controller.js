@@ -31,7 +31,9 @@ sap.ui.define([
             },
             
             onCloseDialog: function () {
-                this.pDialog.close();
+                this.pDialog.then(function(oDialog) {
+                    oDialog.close();
+                });
             }
         });
     });

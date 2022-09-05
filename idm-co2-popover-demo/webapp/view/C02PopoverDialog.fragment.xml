@@ -1,8 +1,27 @@
-<core:FragmentDefinition
-   xmlns="sap.m"
-   xmlns:core="sap.ui.core" >
-   <Dialog
-      id="C02PopoverDialog"
-      title="Hello There">
+<core:FragmentDefinition xmlns="sap.m"
+   xmlns:core="sap.ui.core"
+   xmlns:f="sap.f"
+   xmlns:w="sap.ui.integration.widgets"
+   xmlns:cssgrid="sap.ui.layout.cssgrid">
+   <Dialog id="C02PopoverDialog" contentWidth="50%" title="{i18n>DialogTitle} $123445409">
+
+      <Title text="Incidents" titleStyle="H2" class="sapUiSmallMarginBottom sapUiSmallMarginTop sapUiSmallMarginBegin" />
+      <f:GridContainer>
+         <f:layout>
+            <f:GridContainerSettings rowSize="5rem" columnSize="5rem" gap="1rem" />
+         </f:layout>
+         <f:layoutS>
+            <f:GridContainerSettings rowSize="5rem" columnSize="5rem" gap="0.5rem" />
+         </f:layoutS>
+         <w:Card manifest="{manifests>/list2}" baseUrl="./" action="onAction">
+            <w:layoutData>
+               <f:GridContainerItemLayoutData columns="4" />
+            </w:layoutData>
+         </w:Card>
+      </f:GridContainer>
+
+      <beginButton>
+         <Button text="{i18n>dialogCloseButtonText}" press="onCloseDialog"/>
+      </beginButton>
    </Dialog>
 </core:FragmentDefinition>
