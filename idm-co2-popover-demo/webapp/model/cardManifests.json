@@ -1,89 +1,99 @@
 {
     "donut": {
-		"sap.app": {
-			"id": "sample.CardsLayout.model.donut",
-			"type": "card"
-		},
-		"sap.card": {
-			"type": "Analytical",
-			"header": {
-				"type": "Numeric",
-				"data": {
-					"json": {
-						"n": "123.45",
-						"u": "g",
-						"trend": "Up",
-						"valueColor": "Error"
-					}
-				},
-				"title": "",
-				"mainIndicator": {
-					"number": "{n}",
-					"unit": "{u}",
-					"trend": "{trend}",
-					"state": "{valueColor}"
-				}
-			},
-			"content": {
-				"chartType": "Donut",
-				"legend": {
-					"visible": true,
-					"position": "Bottom",
-					"alignment": "Left"
-				},
-				"plotArea": {
-					"dataLabel": {
-						"visible": true,
-						"showTotal": true
-					}
-				},
-				"title": {
-					"visible": false
-				},
-				"measureAxis": "size",
-				"dimensionAxis": "color",
-				"data": {
-					"json": {
-						"measures": [
-							{
-								"measureName": "Nitrous Oxide",
-								"value": 35
-							},
-							{
-								"measureName": "Methane",
-								"value": 40
-							},
-							{
-								"measureName": "Carbon Monoxide",
-								"value":14
-							},
-							{
-								"measureName": "Carbon Dioxide",
-								"value": 8
-							},
-							{
-								"measureName": "Sulphur Dioxide",
-								"value": 7
-							},
-							{
-								"measureName": "Nitrogen Dioxide",
-								"value": 4
-							}
-						]
-					},
-					"path": "/measures"
-				},
-				"dimensions": [{
-					"label": "Measure Name",
-					"value": "{measureName}"
-				}],
-				"measures": [{
-					"label": "Value",
-					"value": "{value}"
-				}]
-			}
-		}
-	},
+        "sap.app": {
+            "id": "sample.CardsLayout.model.donut",
+            "type": "card"
+        },
+        "sap.card": {
+            "type": "Analytical",
+            "header": {
+                "type": "Numeric",
+                "data": {
+                    "json": {
+                        "n": "123.45",
+                        "u": "g",
+                        "trend": "Up",
+                        "valueColor": "Error"
+                    }
+                },
+                "title": "",
+                "mainIndicator": {
+                    "number": "{n}",
+                    "unit": "{u}",
+                    "trend": "{trend}",
+                    "state": "{valueColor}"
+                },
+                "sideIndicators": [{
+                        "title": "Target",
+                        "number": "100",
+                        "unit": "g"
+                    },
+                    {
+                        "title": "Deviation",
+                        "number": "+23.45",
+                        "unit": "%"
+                    }
+                ]
+            },
+            "content": {
+                "chartType": "Donut",
+                "legend": {
+                    "visible": true,
+                    "position": "Bottom",
+                    "alignment": "Left"
+                },
+                "plotArea": {
+                    "dataLabel": {
+                        "visible": true,
+                        "showTotal": true
+                    }
+                },
+                "title": {
+                    "visible": false
+                },
+                "measureAxis": "size",
+                "dimensionAxis": "color",
+                "data": {
+                    "json": {
+                        "measures": [{
+                                "measureName": "Nitrous Oxide",
+                                "value": 35
+                            },
+                            {
+                                "measureName": "Methane",
+                                "value": 40
+                            },
+                            {
+                                "measureName": "Carbon Monoxide",
+                                "value": 14
+                            },
+                            {
+                                "measureName": "Carbon Dioxide",
+                                "value": 8
+                            },
+                            {
+                                "measureName": "Sulphur Dioxide",
+                                "value": 7
+                            },
+                            {
+                                "measureName": "Nitrogen Dioxide",
+                                "value": 4
+                            }
+                        ]
+                    },
+                    "path": "/measures"
+                },
+                "dimensions": [{
+                    "label": "Measure Name",
+                    "value": "{measureName}"
+                }],
+                "measures": [{
+                    "label": "Value",
+                    "value": "{value}"
+                }]
+            }
+        }
+    },
     "tableCalculatedEmissions": {
         "sap.app": {
             "id": "sample.CardsLayout.model.table",
@@ -137,7 +147,10 @@
             },
             "header": {
                 "title": "Calculated Emission",
-                "subTitle": ""
+                "subTitle": "",
+                "status": {
+                    "text": "5 of 5"
+                }
             },
             "content": {
                 "row": {
