@@ -101,14 +101,6 @@
         },
         "sap.card": {
             "type": "Object",
-            "data": {
-                "json": {
-                    "type": "Combustion",
-                    "emissionClass": "EURO 6c",
-                    "avgConsumption": "35,7 L/100km",
-                    "opfInstalled": "yes"
-                }
-            },
             "header": {
                 "title": "Vehicle Details",
                 "subTitle": "Vehicle_ID"
@@ -118,19 +110,19 @@
                         "title": "Transport Unit",
                         "items": [{
                                 "label": "Type",
-                                "value": "{type}"
+                                "value": "{co2popover>/type}"
                             },
                             {
                                 "label": "Emission Class",
-                                "value": "{emissionClass}"
+                                "value": "{co2popover>/emissionClass}"
                             },
                             {
                                 "label": "Avg. Consumption",
-                                "value": "{avgConsumption}"
+                                "value": "{co2popover>/avgConsumption}"
                             },
                             {
                                 "label": "OPF installed",
-                                "value": "{opfInstalled}"
+                                "value": "{co2popover>/opfInstalled}"
                             }
                         ]
                     },
