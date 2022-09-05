@@ -39,8 +39,8 @@
                 "chartType": "Donut",
                 "legend": {
                     "visible": true,
-                    "position": "Bottom",
-                    "alignment": "Left"
+                    "position": "Side",
+                    "alignment": "Right"
                 },
                 "plotArea": {
                     "dataLabel": {
