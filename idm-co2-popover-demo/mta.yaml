@@ -1,0 +1,94 @@
+_schema-version: "3.2"
+ID: idmco2popoverdemo
+description: A Fiori application.
+version: 0.0.1
+modules:
+- name: idmco2popoverdemo-destination-content
+  type: com.sap.application.content
+  requires:
+  - name: idmco2popoverdemo-destination-service
+    parameters:
+      content-target: true
+  - name: idmco2popoverdemo-repo-host
+    parameters:
+      service-key:
+        name: idmco2popoverdemo-repo-host-key
+  - name: idmco2popoverdemo-uaa
+    parameters:
+      service-key:
+        name: idmco2popoverdemo-uaa-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Name: idmco2popoverdemo_html_repo_host
+          ServiceInstanceName: idmco2popoverdemo-html5-srv
+          ServiceKeyName: idmco2popoverdemo-repo-host-key
+          sap.cloud.service: idmco2popoverdemo
+        - Authentication: OAuth2UserTokenExchange
+          Name: idmco2popoverdemo_uaa
+          ServiceInstanceName: idmco2popoverdemo-xsuaa-srv
+          ServiceKeyName: idmco2popoverdemo-uaa-key
+          sap.cloud.service: idmco2popoverdemo
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+- name: idmco2popoverdemo-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: idmco2popoverdemo-repo-host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - idmco2popoverdemo.zip
+      name: idmco2popoverdemo
+      target-path: resources/
+- name: idmco2popoverdemo
+  type: html5
+  path: .
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: idmco2popoverdemo-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: idmco2popoverdemo-destination-service
+    service-plan: lite
+- name: idmco2popoverdemo-uaa
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: idmco2popoverdemo-xsuaa-srv
+    service-plan: application
+- name: idmco2popoverdemo-repo-host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: idmco2popoverdemo-html5-srv
+    service-plan: app-host
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true

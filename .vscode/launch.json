@@ -1,0 +1,58 @@
+{
+    "configurations": [
+        {
+            "name": "Start idm-co2-popover-demo",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "cwd": "${workspaceFolder}/idm-co2-popover-demo",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#idmco2popoverdemo-display"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "port": 9229,
+            "env": {
+                "DEBUG": "--inspect",
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+            }
+        },
+        {
+            "name": "Start idm-co2-popover-demo Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/idm-co2-popover-demo",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--config",
+                "./ui5-local.yaml",
+                "--open",
+                "test/flpSandbox.html#idmco2popoverdemo-display"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "port": 9229,
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+            }
+        }
+    ],
+    "compounds": []
+}
