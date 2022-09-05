@@ -16,7 +16,7 @@
                         "valueColor": "Error"
                     }
                 },
-                "title": "",
+                "title": "Emisson by pollutant in {u}",
                 "mainIndicator": {
                     "number": "{n}",
                     "unit": "{u}",
@@ -111,7 +111,7 @@
             },
             "header": {
                 "title": "Vehicle Details",
-                "subTitle": "Vehicle ID"
+                "subTitle": "Vehicle_ID"
             },
             "content": {
                 "groups": [{
