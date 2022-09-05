@@ -151,6 +151,41 @@
         }
     },
 
+    "objectRoute": {
+        "sap.app": {
+            "type": "card"
+        },
+        "sap.card": {
+            "type": "Object",
+            "data": {
+                "json": {
+                    "distance": "19.22 km",
+                    "duration": "3h 43m",
+                    "fuelConsumption": "6.95 L"
+                }
+            },
+            "content": {
+                "groups": [{
+                        "title": "Route",
+                        "items": [{
+                                "label": "Distance",
+                                "value": "{distance}"
+                            },
+                            {
+                                "label": "Duration",
+                                "value": "{duration}"
+                            },
+                            {
+                                "label": "Fuel Consumption",
+                                "value": "{fuelConsumption}"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+
     "tableCalculatedEmissions": {
         "sap.app": {
             "id": "sample.CardsLayout.model.table",

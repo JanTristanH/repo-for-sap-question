@@ -10,21 +10,31 @@
          <f:layout>
             <f:GridContainerSettings rowSize="5rem" columnSize="16rem" gap="1rem" />
          </f:layout>
+
          <w:Card manifest="{manifests>/donut}">
             <w:layoutData>
                <f:GridContainerItemLayoutData rows="3" columns="2" />
             </w:layoutData>
          </w:Card>
-         <w:Card manifest="{manifests>/objectVehicle}" >
+
+         <w:Card manifest="{manifests>/objectVehicle}">
             <w:layoutData>
                <f:GridContainerItemLayoutData columns="2" rows="3"/>
             </w:layoutData>
          </w:Card>
+
+         <w:Card manifest="{manifests>/objectRoute}">
+            <w:layoutData>
+               <f:GridContainerItemLayoutData columns="1" rows="3"/>
+            </w:layoutData>
+         </w:Card>
+
          <w:Card manifest="{manifests>/tableCalculatedEmissions}" baseUrl="./" action="onAction">
             <w:layoutData>
                <f:GridContainerItemLayoutData columns="5" />
             </w:layoutData>
          </w:Card>
+
       </f:GridContainer>
 
       <beginButton>
