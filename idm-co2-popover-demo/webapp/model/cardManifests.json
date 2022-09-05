@@ -1,5 +1,74 @@
 {
-
+    "donut": {
+		"sap.app": {
+			"id": "sample.CardsLayout.model.donut",
+			"type": "card"
+		},
+		"sap.card": {
+			"type": "Analytical",
+			"header": {
+				"title": ""
+			},
+			"content": {
+				"chartType": "Donut",
+				"legend": {
+					"visible": true,
+					"position": "Bottom",
+					"alignment": "Left"
+				},
+				"plotArea": {
+					"dataLabel": {
+						"visible": true,
+						"showTotal": true
+					}
+				},
+				"title": {
+					"visible": false
+				},
+				"measureAxis": "size",
+				"dimensionAxis": "color",
+				"data": {
+					"json": {
+						"measures": [
+							{
+								"measureName": "Nitrous Oxide",
+								"value": 35
+							},
+							{
+								"measureName": "Methane",
+								"value": 40
+							},
+							{
+								"measureName": "Carbon Monoxide",
+								"value":14
+							},
+							{
+								"measureName": "Carbon Dioxide",
+								"value": 8
+							},
+							{
+								"measureName": "Sulphur Dioxide",
+								"value": 7
+							},
+							{
+								"measureName": "Nitrogen Dioxide",
+								"value": 4
+							}
+						]
+					},
+					"path": "/measures"
+				},
+				"dimensions": [{
+					"label": "Measure Name",
+					"value": "{measureName}"
+				}],
+				"measures": [{
+					"label": "Value",
+					"value": "{value}"
+				}]
+			}
+		}
+	},
     "tableCalculatedEmissions": {
         "sap.app": {
             "id": "sample.CardsLayout.model.table",

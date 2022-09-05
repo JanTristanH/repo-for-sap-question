@@ -10,6 +10,11 @@
          <f:layout>
             <f:GridContainerSettings rowSize="5rem" columnSize="16rem" gap="1rem" />
          </f:layout>
+         <w:Card manifest="{manifests>/donut}">
+            <w:layoutData>
+               <f:GridContainerItemLayoutData rows="4" columns="4" />
+            </w:layoutData>
+         </w:Card>
          <w:Card manifest="{manifests>/tableCalculatedEmissions}" baseUrl="./" action="onAction">
             <w:layoutData>
                <f:GridContainerItemLayoutData columns="4" />
