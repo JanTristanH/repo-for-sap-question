@@ -157,30 +157,20 @@
         },
         "sap.card": {
             "type": "Object",
-            "data": {
-                "json": {
-                    "distance": "19.22",
-                    "distanceUoM": "km",
-                    "durationHours": "3",
-                    "durationMinutes": "43",
-                    "fuelConsumption": "6.95",
-                    "fuelConsumptionUoM": "L"
-                }
-            },
             "content": {
                 "groups": [{
                     "title": "Route",
                     "items": [{
                             "label": "Distance",
-                            "value": "{distance} {distanceUoM}"
+                            "value": "{co2popover>/distance} {co2popover>/distanceUoM}"
                         },
                         {
                             "label": "Duration",
-                            "value": "{durationHours}h {durationMinutes}m"
+                            "value": "{co2popover>/durationHours}h {co2popover>/durationMinutes}m"
                         },
                         {
                             "label": "Fuel Consumption",
-                            "value": "{fuelConsumption} {fuelConsumptionUoM}"
+                            "value": "{co2popover>/fuelConsumption} {co2popover>/fuelConsumptionUoM}"
                         }
                     ]
                 }]
