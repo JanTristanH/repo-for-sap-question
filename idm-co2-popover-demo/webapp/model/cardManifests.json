@@ -159,29 +159,31 @@
             "type": "Object",
             "data": {
                 "json": {
-                    "distance": "19.22 km",
-                    "duration": "3h 43m",
-                    "fuelConsumption": "6.95 L"
+                    "distance": "19.22",
+                    "distanceUoM": "km",
+                    "durationHours": "3",
+                    "durationMinutes": "43",
+                    "fuelConsumption": "6.95",
+                    "fuelConsumptionUoM": "L"
                 }
             },
             "content": {
                 "groups": [{
-                        "title": "Route",
-                        "items": [{
-                                "label": "Distance",
-                                "value": "{distance}"
-                            },
-                            {
-                                "label": "Duration",
-                                "value": "{duration}"
-                            },
-                            {
-                                "label": "Fuel Consumption",
-                                "value": "{fuelConsumption}"
-                            }
-                        ]
-                    }
-                ]
+                    "title": "Route",
+                    "items": [{
+                            "label": "Distance",
+                            "value": "{distance} {distanceUoM}"
+                        },
+                        {
+                            "label": "Duration",
+                            "value": "{durationHours}h {durationMinutes}m"
+                        },
+                        {
+                            "label": "Fuel Consumption",
+                            "value": "{fuelConsumption} {fuelConsumptionUoM}"
+                        }
+                    ]
+                }]
             }
         }
     },
