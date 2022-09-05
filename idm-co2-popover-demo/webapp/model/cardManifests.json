@@ -7,7 +7,22 @@
 		"sap.card": {
 			"type": "Analytical",
 			"header": {
-				"title": ""
+				"type": "Numeric",
+				"data": {
+					"json": {
+						"n": "123.45",
+						"u": "g",
+						"trend": "Up",
+						"valueColor": "Error"
+					}
+				},
+				"title": "",
+				"mainIndicator": {
+					"number": "{n}",
+					"unit": "{u}",
+					"trend": "{trend}",
+					"state": "{valueColor}"
+				}
 			},
 			"content": {
 				"chartType": "Donut",
