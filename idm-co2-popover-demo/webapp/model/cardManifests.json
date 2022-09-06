@@ -97,6 +97,7 @@
 
     "objectVehicle": {
         "sap.app": {
+            "id": "sample.CardsLayout.model.objectVehicle",
             "type": "card"
         },
         "sap.card": {
@@ -145,6 +146,7 @@
 
     "objectRoute": {
         "sap.app": {
+            "id": "sample.CardsLayout.model.objectRoute",
             "type": "card"
         },
         "sap.card": {
