@@ -37,14 +37,15 @@ sap.ui.define([
                     cardManifests.loadData(sap.ui.require.toUrl("idmco2popoverdemo/model/cardManifests.json"));
                     this.getView().setModel(cardManifests, "manifests");
 
-                    //set oModelCO2popover for mockdata
-                    //TODO this would be read from Backend
-                    let oModelCO2popover = new JSONModel()
-                    oModelCO2popover.loadData(sap.ui.require.toUrl("idmco2popoverdemo/model/mockdata.json"));
-                    this.getView().setModel(oModelCO2popover, "co2popover");
-
                 }
-                this.pDialog.then( oDialog => {
+
+                //set oModelCO2popover for mockdata
+                //TODO this would be read from Backend for single entity
+                let oModelCO2popover = new JSONModel()
+                oModelCO2popover.loadData(sap.ui.require.toUrl("idmco2popoverdemo/model/mockdata.json"));
+                this.getView().setModel(oModelCO2popover, "co2popover");
+
+                this.pDialog.then(oDialog => {
                     oDialog.open();
                     this.oBusyDialog.close();
                 });
