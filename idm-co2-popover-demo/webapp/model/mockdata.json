@@ -75,7 +75,7 @@
             "co2eFactor": "",
             "co2eFactorState": "None",
             "co2eAmount": "",
-            "amountUom": "",
+            "amountUom": "g",
             "co2eAmountUom": ""
         }
 
