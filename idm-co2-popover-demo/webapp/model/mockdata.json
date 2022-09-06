@@ -27,6 +27,22 @@
         }
     ],
 
+    "--comment": "Data for detailed CO2 equivalent",
+    "emissionDetailsIndicators": {
+        "value": "123.45",
+        "unit": "g",
+        "trend": "Up",
+        "valueColor": "Error",
+        "target": {
+            "number": "100",
+            "unit": "g"
+        },
+        "deviation": {
+            "number": "+23.45",
+            "unit": "%"
+        }
+    },
+
     "__comment": "Data for detailed CO2 equivalent",
     "emissionDetails": [{
             "key": "NO2",

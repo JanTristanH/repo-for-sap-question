@@ -8,30 +8,22 @@
             "type": "Analytical",
             "header": {
                 "type": "Numeric",
-                "data": {
-                    "json": {
-                        "n": "123.45",
-                        "u": "g",
-                        "trend": "Up",
-                        "valueColor": "Error"
-                    }
-                },
-                "title": "Emisson by pollutant in {u}",
+                "title": "Emisson by pollutant in {co2popover>/emissionDetailsIndicators/unit}",
                 "mainIndicator": {
-                    "number": "{n}",
-                    "unit": "{u}",
-                    "trend": "{trend}",
-                    "state": "{valueColor}"
+                    "number": "{co2popover>/emissionDetailsIndicators/value}",
+                    "unit": "{co2popover>/emissionDetailsIndicators/unit}",
+                    "trend": "{co2popover>/emissionDetailsIndicators/trend}",
+                    "state": "{co2popover>/emissionDetailsIndicators/valueColor}"
                 },
                 "sideIndicators": [{
                         "title": "Target",
-                        "number": "100",
-                        "unit": "g"
+                        "number": "{co2popover>/emissionDetailsIndicators/target/number}",
+                        "unit": "{co2popover>/emissionDetailsIndicators/target/unit}"
                     },
                     {
                         "title": "Deviation",
-                        "number": "+23.45",
-                        "unit": "%"
+                        "number": "{co2popover>/emissionDetailsIndicators/deviation/number}",
+                        "unit": "{co2popover>/emissionDetailsIndicators/deviation/unit}"
                     }
                 ]
             },
@@ -135,26 +127,25 @@
             },
             "content": {
                 "groups": [{
-                        "title": "Transport Unit",
-                        "items": [{
-                                "label": "Type",
-                                "value": "{co2popover>/type}"
-                            },
-                            {
-                                "label": "Emission Class",
-                                "value": "{co2popover>/emissionClass}"
-                            },
-                            {
-                                "label": "Avg. Consumption",
-                                "value": "{co2popover>/avgConsumption}"
-                            },
-                            {
-                                "label": "OPF installed",
-                                "value": "{co2popover>/opfInstalled}"
-                            }
-                        ]
-                    }
-                ]
+                    "title": "Transport Unit",
+                    "items": [{
+                            "label": "Type",
+                            "value": "{co2popover>/type}"
+                        },
+                        {
+                            "label": "Emission Class",
+                            "value": "{co2popover>/emissionClass}"
+                        },
+                        {
+                            "label": "Avg. Consumption",
+                            "value": "{co2popover>/avgConsumption}"
+                        },
+                        {
+                            "label": "OPF installed",
+                            "value": "{co2popover>/opfInstalled}"
+                        }
+                    ]
+                }]
             }
         }
     },
@@ -249,7 +240,7 @@
             },
             "content": {
                 "data": {
-                    "path":"co2popover>/loadedGoods"
+                    "path": "co2popover>/loadedGoods"
                 },
                 "maxItems": "3",
                 "item": {
