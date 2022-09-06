@@ -19,6 +19,7 @@
 
     "trip_id": "42010aee-c6b8-1ed9-bff7-8f66bc720ac3",
     "hexID": "42010AEEC6B81ED9BFF78F66BC720AC3",
+    "ItemCount": 5,
     "to_EmissionDetail": {
         "results": [{
                 "tripid": "42010000-0000-0000-0000-000000000000",

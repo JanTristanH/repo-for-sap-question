@@ -195,13 +195,22 @@
                 "title": "Calculated Emission",
                 "subTitle": "",
                 "status": {
-                    "text": "5 of 5"
-                }
+				"text": {
+					"format": {
+						"translationKey": "i18n>CARD.COUNT_X_OF_Y",
+						"parts": [
+							"parameters>/visibleItems",
+							"co2popover>/ItemCount"
+						]
+					}
+				}
+			}
             },
             "content": {
                 "data": {
                     "path": "co2popover>/to_EmissionDetail/results"
                 },
+                "maxItems": 2,
                 "row": {
                     "columns": [{
                             "title": "Key",
