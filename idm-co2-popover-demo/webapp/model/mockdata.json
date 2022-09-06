@@ -12,6 +12,19 @@
     "avgConsumption": "35,7 L/100km",
     "opfInstalled": "yes",
 
+    "___comment": "Data for Loaded Goods",
+    "loadedGoods": [{
+            "name": "Diesel",
+            "quantity": 1500,
+            "uom": "L15"
+        },
+        {
+            "name": "Petrol",
+            "quantity": 7500,
+            "uom": "L15"
+        }
+    ],
+
     "__comment": "Data for detailed CO2 equivalent",
     "emissionDetails": [{
             "key": "NO2",

@@ -19,13 +19,19 @@
 
          <w:Card manifest="{manifests>/objectVehicle}">
             <w:layoutData>
-               <f:GridContainerItemLayoutData columns="6"/>
+               <f:GridContainerItemLayoutData columns="3"/>
             </w:layoutData>
          </w:Card>
 
          <w:Card manifest="{manifests>/objectRoute}">
             <w:layoutData>
                <f:GridContainerItemLayoutData columns="2"/>
+            </w:layoutData>
+         </w:Card>
+
+         <w:Card manifest="{manifests>/listLoadedGoods}">
+            <w:layoutData>
+               <f:GridContainerItemLayoutData columns="3"/>
             </w:layoutData>
          </w:Card>
 

@@ -153,18 +153,6 @@
                                 "value": "{co2popover>/opfInstalled}"
                             }
                         ]
-                    },
-                    {
-                        "title": "Loaded Goods",
-                        "items": [{
-                                "label": "Diesel",
-                                "value": "1500 L"
-                            },
-                            {
-                                "label": "Petrol",
-                                "value": "2500 L"
-                            }
-                        ]
                     }
                 ]
             }
@@ -241,6 +229,33 @@
                             "value": "{co2popover>co2eAmount} {co2popover>co2eAmountUom}"
                         }
                     ]
+                }
+            }
+        }
+    },
+
+    "listLoadedGoods": {
+        "sap.app": {
+            "id": "sample.CardsLayout.model.listLoadedGoods",
+            "type": "card"
+        },
+        "sap.card": {
+            "type": "List",
+            "header": {
+                "title": "Loaded Goods",
+                "icon": {
+                    "src": "sap-icon://product"
+                }
+            },
+            "content": {
+                "data": {
+                    "path":"co2popover>/loadedGoods"
+                },
+                "maxItems": "3",
+                "item": {
+                    "title": "{co2popover>name}",
+                    "description": "{co2popover>quantity} {co2popover>uom}",
+                    "highlight": "None"
                 }
             }
         }
