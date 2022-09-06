@@ -195,16 +195,16 @@
                 "title": "Calculated Emission",
                 "subTitle": "",
                 "status": {
-				"text": {
-					"format": {
-						"translationKey": "i18n>CARD.COUNT_X_OF_Y",
-						"parts": [
-							"parameters>/visibleItems",
-							"co2popover>/ItemCount"
-						]
-					}
-				}
-			}
+                    "text": {
+                        "format": {
+                            "translationKey": "i18n>CARD.COUNT_X_OF_Y",
+                            "parts": [
+                                "parameters>/visibleItems",
+                                "co2popover>/emissionsCount"
+                            ]
+                        }
+                    }
+                }
             },
             "content": {
                 "data": {
@@ -251,6 +251,17 @@
                 "title": "Loaded Goods",
                 "icon": {
                     "src": "sap-icon://product"
+                },
+                "status": {
+                    "text": {
+                        "format": {
+                            "translationKey": "i18n>CARD.COUNT_X_OF_Y",
+                            "parts": [
+                                "parameters>/visibleItems",
+                                "co2popover>/itemsCount"
+                            ]
+                        }
+                    }
                 }
             },
             "content": {
