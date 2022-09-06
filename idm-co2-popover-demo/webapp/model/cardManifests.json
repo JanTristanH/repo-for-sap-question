@@ -141,7 +141,7 @@
                         },
                         {
                             "label": "Avg. Consumption",
-                            "value": "{co2popover>avgconsumption} {co2popover>avgconsumptionuom}"
+                            "value": "{= format.float(${co2popover>avgconsumption}, {decimals:1, style:'short'})}{co2popover>avgconsumptionuom}"
                         },
                         {
                             "label": "OPF installed",
@@ -168,7 +168,7 @@
                     "title": "Route",
                     "items": [{
                             "label": "Distance",
-                            "value": "{co2popover>distance} {co2popover>distanceuom}"
+                            "value": "{= format.float(${co2popover>distance}, {decimals:2, style:'short'})}{co2popover>distanceuom}"
                         },
                         {
                             "label": "Duration",
@@ -177,7 +177,7 @@
                         },
                         {
                             "label": "Fuel Consumption",
-                            "value": "{co2popover>fuelconsumption} {co2popover>fuelconsumptionuom}"
+                            "value": "{= format.float(${co2popover>fuelconsumption}, {decimals:1, style:'short'})}{co2popover>fuelconsumptionuom}"
                         }
                     ]
                 }]
@@ -224,16 +224,16 @@
                         },
                         {
                             "title": "Amount",
-                            "value": "{co2popover>amount} {co2popover>amountuom}"
+                            "value": "{= format.float(${co2popover>amount}, {decimals:2, style:'short'})}{co2popover>amountuom}"
                         },
                         {
                             "title": "CO2e Factor",
-                            "value": "{co2popover>co2efactor}",
+                            "value": "{= format.float(${co2popover>co2efactor}, {decimals:2, style:'short'})}",
                             "state": "{co2popover>co2efactorstate}"
                         },
                         {
                             "title": "CO2e Amount",
-                            "value": "{co2popover>co2eamount} {co2popover>co2eamountuom}"
+                            "value": "{= format.float(${co2popover>co2eamount}, {decimals:2, style:'short'})}{co2popover>co2eamountuom}"
                         }
                     ]
                 }
@@ -272,7 +272,7 @@
                 "maxItems": "5",
                 "item": {
                     "title": "{co2popover>name}",
-                    "description": "{co2popover>quantity} {co2popover>uom}",
+                    "description": "{= format.float(${co2popover>quantity}, {decimals:0, style:'short'})}{co2popover>uom}",
                     "highlight": "None"
                 }
             }
