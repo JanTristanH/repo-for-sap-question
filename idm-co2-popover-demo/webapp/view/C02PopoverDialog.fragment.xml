@@ -3,7 +3,7 @@
    xmlns:f="sap.f"
    xmlns:w="sap.ui.integration.widgets"
    xmlns:cssgrid="sap.ui.layout.cssgrid">
-   <Dialog id="C02PopoverDialog" contentWidth="65%" title="{i18n>DialogTitle} $123445409">
+   <Dialog id="C02PopoverDialog" contentWidth="65%" title="{i18n>DialogTitle} {co2popover>/tripId}">
 
       <!--<Title text="Super cool Dialog" titleStyle="H2" class="sapUiSmallMarginBottom sapUiSmallMarginTop sapUiSmallMarginBegin" />-->
       <f:GridContainer>
