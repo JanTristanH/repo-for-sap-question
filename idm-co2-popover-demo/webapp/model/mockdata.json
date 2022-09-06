@@ -19,17 +19,62 @@
     "hexID": "42010AEEC6B81ED9BFF78F66BC720AC3",
     "to_EmissionDetail": {
         "results": [{
-            "tripid": "42010000-0000-0000-0000-000000000000",
-            "name": "NO2",
-            "hextripid": "42010AEEC6B81ED9BFF78F66BC720AC3",
-            "description": "Nitrous oxide",
-            "amount": "106.170000",
-            "co2efactor": "298.000000",
-            "co2efactorstate": "Error",
-            "co2eamount": "31638.660000",
+                "tripid": "42010000-0000-0000-0000-000000000000",
+                "name": "NO2",
+                "hextripid": "42010AEEC6B81ED9BFF78F66BC720AC3",
+                "description": "Nitrous oxide",
+                "amount": "106.170000",
+                "co2efactor": "298.000000",
+                "co2efactorstate": "Error",
+                "co2eamount": "31638.660000",
+                "amountuom": "g",
+                "co2eamountuom": "g"
+            },
+            {
+
+                "tripid": "42010000-0000-0000-0000-000000000000",
+                "name": "CH4",
+                "hextripid": "42010AEEC6B81ED9BFF78F66BC720AC3",
+                "description": "Methane",
+                "amount": "0.057000",
+                "co2efactor": "25.000000",
+                "co2efactorstate": "Warning",
+                "co2eamount": "1.420000",
+                "amountuom": "g",
+                "co2eamountuom": "g"
+            },
+
+            {
+            "name": "CO",
+            "description": "Carbon Monoxide",
+            "amount": "15.85",
+            "co2efactor": "",
+            "co2efactorstate": "None",
+            "co2eamount": "",
+            "amountuom": "g",
+            "co2eamountuom": ""
+        },
+        {
+            "name": "CO2",
+            "description": "Carbon Dioxide",
+            "amount": "21.73",
+            "co2efactor": "1",
+            "co2efactorstate": "None",
+            "co2eamount": "21.73",
             "amountuom": "g",
             "co2eamountuom": "g"
-        }]
+        },
+        {
+            "name": "SO2",
+            "description": "Sulphur Dioxide",
+            "amount": "0.11",
+            "co2efactor": "",
+            "co2efactorstate": "None",
+            "co2eamount": "",
+            "amountuom": "g",
+            "co2eamountuom": ""
+        }
+        ]
     },
     "to_Item": {
         "results": [{
