@@ -172,7 +172,8 @@
                         },
                         {
                             "label": "Duration",
-                            "value": "{co2popover>durationhours}h {co2popover>durationminutes}m"
+                            "value": "{co2popover>durationhours}h {co2popover>durationminutes}m",
+                            "_comment": "TODO use this and pass js date https://ui5.sap.com/test-resources/sap/ui/integration/demokit/cardExplorer/webapp/index.html#/explore/dateAndTime"
                         },
                         {
                             "label": "Fuel Consumption",
