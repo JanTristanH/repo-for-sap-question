@@ -138,7 +138,7 @@
                         },
                         {
                             "label": "Avg. Consumption",
-                            "value": "{co2popover>/avgConsumption}"
+                            "value": "{co2popover>/avgConsumption} {co2popover>/avgConsumptionUom}"
                         },
                         {
                             "label": "OPF installed",

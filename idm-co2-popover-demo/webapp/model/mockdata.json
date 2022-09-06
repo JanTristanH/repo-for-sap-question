@@ -11,7 +11,8 @@
     "_comment": "Vehicle Details",
     "type": "Combustion",
     "emissionClass": "EURO 6c",
-    "avgConsumption": "35,7 L/100km",
+    "avgConsumption": "35,7",
+    "avgConsumptionUom": "L/100km",
     "opfInstalled": "yes",
 
     "___comment": "Data for Loaded Goods",
