@@ -1,18 +1,20 @@
 {
-    "--comment": "Data for numeric KPI Header, not provided by backend ",
-    "emissionDetailsIndicators": {
+    "to_Indicators": {
+        "__metadata": {
+            "id": "https://icohana02.implico.de:44300/sap/opu/odata/sap/ZTHE_CO2_MAIN_CDS/ZTHE_CO2_emission_Dtl_HEADER(guid'42010aee-c6b8-1ed9-bff7-8f66bc720ac3')",
+            "uri": "https://icohana02.implico.de:44300/sap/opu/odata/sap/ZTHE_CO2_MAIN_CDS/ZTHE_CO2_emission_Dtl_HEADER(guid'42010aee-c6b8-1ed9-bff7-8f66bc720ac3')",
+            "type": "ZTHE_CO2_MAIN_CDS.ZTHE_CO2_emission_Dtl_HEADERType"
+        },
+        "trip_id": "42010aee-c6b8-1ed9-bff7-8f66bc720ac3",
+        "hexID": "42010AEEC6B81ED9BFF78F66BC720AC3",
         "value": "123.45",
         "unit": "g",
         "trend": "Up",
         "valueColor": "Error",
-        "target": {
-            "number": "100",
-            "unit": "g"
-        },
-        "deviation": {
-            "number": "+23.45",
-            "unit": "%"
-        }
+        "targetnumber": 100,
+        "targetunit": "g",
+        "deviationnumber": "+23.45",
+        "deviationunit": "%"
     },
 
     "trip_id": "42010aee-c6b8-1ed9-bff7-8f66bc720ac3",
@@ -45,35 +47,35 @@
             },
 
             {
-            "name": "CO",
-            "description": "Carbon Monoxide",
-            "amount": "15.85",
-            "co2efactor": "",
-            "co2efactorstate": "None",
-            "co2eamount": "",
-            "amountuom": "g",
-            "co2eamountuom": ""
-        },
-        {
-            "name": "CO2",
-            "description": "Carbon Dioxide",
-            "amount": "21.73",
-            "co2efactor": "1",
-            "co2efactorstate": "None",
-            "co2eamount": "21.73",
-            "amountuom": "g",
-            "co2eamountuom": "g"
-        },
-        {
-            "name": "SO2",
-            "description": "Sulphur Dioxide",
-            "amount": "0.11",
-            "co2efactor": "",
-            "co2efactorstate": "None",
-            "co2eamount": "",
-            "amountuom": "g",
-            "co2eamountuom": ""
-        }
+                "name": "CO",
+                "description": "Carbon Monoxide",
+                "amount": "15.85",
+                "co2efactor": "",
+                "co2efactorstate": "None",
+                "co2eamount": "",
+                "amountuom": "g",
+                "co2eamountuom": ""
+            },
+            {
+                "name": "CO2",
+                "description": "Carbon Dioxide",
+                "amount": "21.73",
+                "co2efactor": "1",
+                "co2efactorstate": "None",
+                "co2eamount": "21.73",
+                "amountuom": "g",
+                "co2eamountuom": "g"
+            },
+            {
+                "name": "SO2",
+                "description": "Sulphur Dioxide",
+                "amount": "0.11",
+                "co2efactor": "",
+                "co2efactorstate": "None",
+                "co2eamount": "",
+                "amountuom": "g",
+                "co2eamountuom": ""
+            }
         ]
     },
     "to_Item": {

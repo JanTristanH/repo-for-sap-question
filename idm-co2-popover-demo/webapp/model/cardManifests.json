@@ -8,22 +8,22 @@
             "type": "Analytical",
             "header": {
                 "type": "Numeric",
-                "title": "Emisson by pollutant in {co2popover>/emissionDetailsIndicators/unit}",
+                "title": "Emisson by pollutant in {co2popover>/to_Indicators/unit}",
                 "mainIndicator": {
-                    "number": "{co2popover>/emissionDetailsIndicators/value}",
-                    "unit": "{co2popover>/emissionDetailsIndicators/unit}",
-                    "trend": "{co2popover>/emissionDetailsIndicators/trend}",
-                    "state": "{co2popover>/emissionDetailsIndicators/valueColor}"
+                    "number": "{co2popover>/to_Indicators/value}",
+                    "unit": "{co2popover>/to_Indicators/unit}",
+                    "trend": "{co2popover>/to_Indicators/trend}",
+                    "state": "{co2popover>/to_Indicators/valueColor}"
                 },
                 "sideIndicators": [{
                         "title": "Target",
-                        "number": "{co2popover>/emissionDetailsIndicators/target/number}",
-                        "unit": "{co2popover>/emissionDetailsIndicators/target/unit}"
+                        "number": "{co2popover>/to_Indicators/targetnumber}",
+                        "unit": "{co2popover>/to_Indicators/targetunit}"
                     },
                     {
                         "title": "Deviation",
-                        "number": "{co2popover>/emissionDetailsIndicators/deviation/number}",
-                        "unit": "{co2popover>/emissionDetailsIndicators/deviation/unit}"
+                        "number": "{co2popover>/to_Indicators/deviationnumber}",
+                        "unit": "{co2popover>/to_Indicators/deviationunit}"
                     }
                 ]
             },
