@@ -126,23 +126,26 @@
                 "subTitle": "Vehicle_ID"
             },
             "content": {
+                "data": {
+                    "path": "co2popover>/to_Tripdata"
+                },
                 "groups": [{
                     "title": "Transport Unit",
                     "items": [{
                             "label": "Type",
-                            "value": "{co2popover>/type}"
+                            "value": "{co2popover>type}"
                         },
                         {
                             "label": "Emission Class",
-                            "value": "{co2popover>/emissionClass}"
+                            "value": "{co2popover>emissionclass}"
                         },
                         {
                             "label": "Avg. Consumption",
-                            "value": "{co2popover>/avgConsumption} {co2popover>/avgConsumptionUom}"
+                            "value": "{co2popover>avgconsumption} {co2popover>avgconsumptionuom}"
                         },
                         {
                             "label": "OPF installed",
-                            "value": "{co2popover>/opfInstalled}"
+                            "value": "{co2popover>opfinstalled}"
                         }
                     ]
                 }]
@@ -158,19 +161,22 @@
         "sap.card": {
             "type": "Object",
             "content": {
+                "data": {
+                    "path": "co2popover>/to_Tripdata"
+                },
                 "groups": [{
                     "title": "Route",
                     "items": [{
                             "label": "Distance",
-                            "value": "{co2popover>/distance} {co2popover>/distanceUoM}"
+                            "value": "{co2popover>distance} {co2popover>distanceuom}"
                         },
                         {
                             "label": "Duration",
-                            "value": "{co2popover>/durationHours}h {co2popover>/durationMinutes}m"
+                            "value": "{co2popover>durationhours}h {co2popover>durationminutes}m"
                         },
                         {
                             "label": "Fuel Consumption",
-                            "value": "{co2popover>/fuelConsumption} {co2popover>/fuelConsumptionUoM}"
+                            "value": "{co2popover>fuelconsumption} {co2popover>fuelconsumptionuom}"
                         }
                     ]
                 }]
@@ -194,12 +200,12 @@
             },
             "content": {
                 "data": {
-                    "path": "co2popover>/emissionDetails"
+                    "path": "co2popover>/to_EmissionDetail/results"
                 },
                 "row": {
                     "columns": [{
                             "title": "Key",
-                            "value": "{co2popover>key}",
+                            "value": "{co2popover>name}",
                             "identifier": true
                         },
                         {
@@ -208,16 +214,16 @@
                         },
                         {
                             "title": "Amount",
-                            "value": "{co2popover>amount} {co2popover>amountUom}"
+                            "value": "{co2popover>amount} {co2popover>amountuom}"
                         },
                         {
                             "title": "CO2e Factor",
-                            "value": "{co2popover>co2eFactor}",
-                            "state": "{co2popover>co2eFactorState}"
+                            "value": "{co2popover>co2efactor}",
+                            "state": "{co2popover>co2efactorstate}"
                         },
                         {
                             "title": "CO2e Amount",
-                            "value": "{co2popover>co2eAmount} {co2popover>co2eAmountUom}"
+                            "value": "{co2popover>co2eamount} {co2popover>co2eamountuom}"
                         }
                     ]
                 }
@@ -240,9 +246,9 @@
             },
             "content": {
                 "data": {
-                    "path": "co2popover>/loadedGoods"
+                    "path": "co2popover>/to_Item/results"
                 },
-                "maxItems": "3",
+                "maxItems": "5",
                 "item": {
                     "title": "{co2popover>name}",
                     "description": "{co2popover>quantity} {co2popover>uom}",

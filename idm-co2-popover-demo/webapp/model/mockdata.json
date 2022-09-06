@@ -1,34 +1,5 @@
 {
-    "tripId": "$123445409",
-
-    "distance": "19.22",
-    "distanceUoM": "km",
-    "durationHours": "3",
-    "durationMinutes": "43",
-    "fuelConsumption": "6.95",
-    "fuelConsumptionUoM": "L",
-
-    "_comment": "Vehicle Details",
-    "type": "Combustion",
-    "emissionClass": "EURO 6c",
-    "avgConsumption": "35,7",
-    "avgConsumptionUom": "L/100km",
-    "opfInstalled": "yes",
-
-    "___comment": "Data for Loaded Goods",
-    "loadedGoods": [{
-            "name": "Diesel",
-            "quantity": 1500,
-            "uom": "L15"
-        },
-        {
-            "name": "Petrol",
-            "quantity": 7500,
-            "uom": "L15"
-        }
-    ],
-
-    "--comment": "Data for detailed CO2 equivalent",
+    "--comment": "Data for numeric KPI Header, not provided by backend ",
     "emissionDetailsIndicators": {
         "value": "123.45",
         "unit": "g",
@@ -44,57 +15,67 @@
         }
     },
 
-    "__comment": "Data for detailed CO2 equivalent",
-    "emissionDetails": [{
-            "key": "NO2",
+    "trip_id": "42010aee-c6b8-1ed9-bff7-8f66bc720ac3",
+    "hexID": "42010AEEC6B81ED9BFF78F66BC720AC3",
+    "to_EmissionDetail": {
+        "results": [{
+            "tripid": "42010000-0000-0000-0000-000000000000",
+            "name": "NO2",
+            "hextripid": "42010AEEC6B81ED9BFF78F66BC720AC3",
             "description": "Nitrous oxide",
-            "amount": "106.17",
-            "co2eFactor": "298",
-            "co2eFactorState": "Error",
-            "co2eAmount": "31,638.66",
-            "amountUom": "g",
-            "co2eAmountUom": "g"
+            "amount": "106.170000",
+            "co2efactor": "298.000000",
+            "co2efactorstate": "Error",
+            "co2eamount": "31638.660000",
+            "amountuom": "g",
+            "co2eamountuom": "g"
+        }]
+    },
+    "to_Item": {
+        "results": [{
+            "item_id": "42010aee-c6b8-1ed9-bff7-8f66bc726ac3",
+            "trip_id": "42010aee-c6b8-1ed9-bff7-8f66bc720ac3",
+            "name": "OGSD_200",
+            "quantity": "450.000",
+            "uom": "L15"
+        }, {
+            "item_id": "42010aee-c6b8-1eea-8090-96bf57877bad",
+            "trip_id": "42010aee-c6b8-1ed9-bff7-8f66bc720ac3",
+            "name": "OGSD_200",
+            "quantity": "450.000",
+            "uom": "L15"
+        }, {
+            "item_id": "42010aee-c6b8-1eea-8090-a3ccec4dbbb3",
+            "trip_id": "42010aee-c6b8-1ed9-bff7-8f66bc720ac3",
+            "name": "OGSD_200",
+            "quantity": "350.000",
+            "uom": "L15"
+        }, {
+            "item_id": "42010aee-c6b8-1eea-8090-a3ccec4efbb3",
+            "trip_id": "42010aee-c6b8-1ed9-bff7-8f66bc720ac3",
+            "name": "OGSD_200",
+            "quantity": "350.000",
+            "uom": "L15"
+        }]
+    },
+    "to_Tripdata": {
+        "__metadata": {
+            "id": "https://icohana02.implico.de:44300/sap/opu/odata/sap/ZTHE_CO2_MAIN_CDS/ZTHE_CO2_TRIP_DETAIL(guid'42010000-0000-0000-0000-000000000000')",
+            "uri": "https://icohana02.implico.de:44300/sap/opu/odata/sap/ZTHE_CO2_MAIN_CDS/ZTHE_CO2_TRIP_DETAIL(guid'42010000-0000-0000-0000-000000000000')",
+            "type": "ZTHE_CO2_MAIN_CDS.ZTHE_CO2_TRIP_DETAILType"
         },
-        {
-            "key": "CH4",
-            "description": "Methane",
-            "amount": "0.057",
-            "co2eFactor": "25",
-            "co2eFactorState": "Warning",
-            "co2eAmount": "1.42",
-            "amountUom": "g",
-            "co2eAmountUom": "g"
-        },
-        {
-            "key": "CO",
-            "description": "Carbon Monoxide",
-            "amount": "15.85",
-            "co2eFactor": "",
-            "co2eFactorState": "None",
-            "co2eAmount": "",
-            "amountUom": "g",
-            "co2eAmountUom": ""
-        },
-        {
-            "key": "CO2",
-            "description": "Carbon Dioxide",
-            "amount": "21.73",
-            "co2eFactor": "1",
-            "co2eFactorState": "None",
-            "co2eAmount": "21.73",
-            "amountUom": "g",
-            "co2eAmountUom": "g"
-        },
-        {
-            "key": "SO2",
-            "description": "Sulphur Dioxide",
-            "amount": "0.11",
-            "co2eFactor": "",
-            "co2eFactorState": "None",
-            "co2eAmount": "",
-            "amountUom": "g",
-            "co2eAmountUom": ""
-        }
-
-    ]
+        "tripid": "42010000-0000-0000-0000-000000000000",
+        "hextripid": "42010AEEC6B81ED9BFF78F66BC720AC3",
+        "distance": "19.220000",
+        "distanceuom": "km",
+        "durationhours": 3,
+        "durationminutes": 44,
+        "fuelconsumption": "6.700000",
+        "fuelconsumptionuom": "L",
+        "type": "Combustion",
+        "emissionclass": "EURO 6c",
+        "avgconsumption": "35.700000",
+        "avgconsumptionuom": "L/100km",
+        "opfinstalled": "yes"
+    }
 }

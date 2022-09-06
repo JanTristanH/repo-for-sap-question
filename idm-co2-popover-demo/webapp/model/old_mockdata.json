@@ -1,0 +1,100 @@
+{
+    "tripId": "$123445409",
+
+    "distance": "19.22",
+    "distanceUoM": "km",
+    "durationHours": "3",
+    "durationMinutes": "43",
+    "fuelConsumption": "6.95",
+    "fuelConsumptionUoM": "L",
+
+    "_comment": "Vehicle Details",
+    "type": "Combustion",
+    "emissionClass": "EURO 6c",
+    "avgConsumption": "35,7",
+    "avgConsumptionUom": "L/100km",
+    "opfInstalled": "yes",
+
+    "___comment": "Data for Loaded Goods",
+    "loadedGoods": [{
+            "name": "Diesel",
+            "quantity": 1500,
+            "uom": "L15"
+        },
+        {
+            "name": "Petrol",
+            "quantity": 7500,
+            "uom": "L15"
+        }
+    ],
+
+    "--comment": "Data for detailed CO2 equivalent",
+    "emissionDetailsIndicators": {
+        "value": "123.45",
+        "unit": "g",
+        "trend": "Up",
+        "valueColor": "Error",
+        "target": {
+            "number": "100",
+            "unit": "g"
+        },
+        "deviation": {
+            "number": "+23.45",
+            "unit": "%"
+        }
+    },
+
+    "__comment": "Data for detailed CO2 equivalent",
+    "emissionDetails": [{
+            "key": "NO2",
+            "description": "Nitrous oxide",
+            "amount": "106.17",
+            "co2eFactor": "298",
+            "co2eFactorState": "Error",
+            "co2eAmount": "31,638.66",
+            "amountUom": "g",
+            "co2eAmountUom": "g"
+        },
+        {
+            "key": "CH4",
+            "description": "Methane",
+            "amount": "0.057",
+            "co2eFactor": "25",
+            "co2eFactorState": "Warning",
+            "co2eAmount": "1.42",
+            "amountUom": "g",
+            "co2eAmountUom": "g"
+        },
+        {
+            "key": "CO",
+            "description": "Carbon Monoxide",
+            "amount": "15.85",
+            "co2eFactor": "",
+            "co2eFactorState": "None",
+            "co2eAmount": "",
+            "amountUom": "g",
+            "co2eAmountUom": ""
+        },
+        {
+            "key": "CO2",
+            "description": "Carbon Dioxide",
+            "amount": "21.73",
+            "co2eFactor": "1",
+            "co2eFactorState": "None",
+            "co2eAmount": "21.73",
+            "amountUom": "g",
+            "co2eAmountUom": "g"
+        },
+        {
+            "key": "SO2",
+            "description": "Sulphur Dioxide",
+            "amount": "0.11",
+            "co2eFactor": "",
+            "co2eFactorState": "None",
+            "co2eAmount": "",
+            "amountUom": "g",
+            "co2eAmountUom": ""
+        }
+
+    ]
+}
