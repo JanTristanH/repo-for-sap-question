@@ -8,6 +8,62 @@
         "hexID": "42010AEEC6B81ED9BFF78F66BC720AC3",
         "itemsCount": 4,
         "emissionsCount": 2,
+
+        "emissionDetails": [{
+                                "key": "NO2",
+                                "description": "Nitrous oxide",
+                                "amount": "106.17",
+                                "co2eFactor": "298",
+                                "co2eFactorState": "Error",
+                                "co2eAmount": "31,638.66",
+                                "amountUom": "g",
+                                "co2eAmountUom": "g"
+                            },
+                            {
+                                "key": "CH4",
+                                "description": "Methane",
+                                "amount": "0.057",
+                                "co2eFactor": "25",
+                                "co2eFactorState": "Warning",
+                                "co2eAmount": "1.42",
+                                "amountUom": "g",
+                                "co2eAmountUom": "g"
+                            },
+                            {
+                                "key": "CO",
+                                "description": "Carbon Monoxide",
+                                "amount": "15.85",
+                                "co2eFactor": "",
+                                "co2eFactorState": "None",
+                                "co2eAmount": "",
+                                "amountUom": "g",
+                                "co2eAmountUom": ""
+                            },
+                            {
+                                "key": "CO2",
+                                "description": "Carbon Dioxide",
+                                "amount": "21.73",
+                                "co2eFactor": "1",
+                                "co2eFactorState": "None",
+                                "co2eAmount": "21.73",
+                                "amountUom": "g",
+                                "co2eAmountUom": "g"
+                            },
+                            {
+                                "key": "SO2",
+                                "description": "Sulphur Dioxide",
+                                "amount": "0.11",
+                                "co2eFactor": "",
+                                "co2eFactorState": "None",
+                                "co2eAmount": "",
+                                "amountUom": "",
+                                "co2eAmountUom": ""
+                            }
+
+                        ],
+                    
+                    
+
         "to_EmissionDetail": {
             "results": [
                 {
