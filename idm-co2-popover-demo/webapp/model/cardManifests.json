@@ -46,7 +46,6 @@
                 "measureAxis": "size",
                 "dimensionAxis": "color",
                 "data": {
-                    "json":{},
                     "path": "co2popover>/emissionDetails"
                 },
                 "dimensions": [{
@@ -74,7 +73,6 @@
             },
             "content": {
                 "data": {
-                "json":{},
                     "path": "co2popover>/to_Tripdata"
                 },
                 "groups": [{
